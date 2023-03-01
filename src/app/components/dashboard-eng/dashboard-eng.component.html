@@ -1,0 +1,24 @@
+<div class="dashboard-eng-container">
+    <nav class="d-flex align-items-center p-2">
+            <img src="../../../assets/image/mejharlogo.png" alt="error" class="logom" width="100px"/> 
+        <nav class="d-flex justify-content-end align-items-center p-3">
+            <a *ngIf="!isAdmin" routerLink="/dashboard-arab" class="navbar-navlink6 rounded ">
+                <div class="btn  bg-white rounded mx-2">
+                    <span class="p-2 text-dark">عربى</span>
+                </div>
+            </a>
+            <a  style="cursor: pointer;" (click)="logOut()" class="navbar-log-in link mx-3">Log out</a>
+            <a *ngIf="!isAdmin" routerLink="/subscribtion" class="navbar-navlink6 rounded ">
+                <div class="navbar-sign-up-btn rounded mx-2">
+                    <span class="navbar-sign-up p-2  text-white">Subscription</span>
+                </div>
+            </a>    
+        </nav>
+    </nav>
+        <div style="display: flex; justify-content: center; width: 1500px; text-align:center;">
+            <iframe class="frame" src="https://8.213.27.39:5601/app/r/s/8Krkn?auth_provider_hint=anonymous1"  frameborder="0" allowfullscreen width=1290
+                height="650" ></iframe>
+        </div>
+    </div>
+    
+    

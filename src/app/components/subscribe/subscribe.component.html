@@ -1,0 +1,26 @@
+<nav class="d-flex align-items-center p-2">
+    <img src="../../../assets/image/mejharlogo.png" alt="error" class="logom" width="100px"/> 
+      <nav class="d-flex justify-content-end align-items-center p-3">  
+        <a style="cursor: pointer;" (click)="logOut()" class="navbar-log-in link mx-3">Log out</a>
+        <a routerLink="/dashboard-eng" class="navbar-navlink6 rounded ">
+            <div class="navbar-sign-up-btn rounded mx-2">
+                <span class="navbar-sign-up p-2  text-white">Back</span>
+            </div>
+         </a>    
+      </nav>
+  </nav>
+<section class="py-5 service login-container">
+    <div>
+        <h1 class="title ">Subscribe To Our Service</h1>
+        <div class="container mt-5">
+            <div class="row gy-3">
+                <div class="col-md-13">
+                    <div class="item h-100 shadow p-3">
+                        <h5>Do You Want To Subscribe Emails Serive ?</h5>
+                        <button (click)="subscribe($event , 'Emails')" class="btn btn-succes mt-3 ">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

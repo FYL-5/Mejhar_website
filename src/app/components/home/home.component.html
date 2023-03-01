@@ -1,0 +1,32 @@
+<section class="py-5 service login-container">
+  <div class="home-container">
+    <div class="home-header">
+      <div class="home-heading">
+        <div id="notifcation" class="home-notification"></div>
+      </div>
+      <div class="home-hero">
+        <nav class="d-flex align-items-center p-2">
+          <img src="../../../assets/image/mejharlogo.png" alt="error" class="logom" width="150px"/> 
+        <nav class="d-flex justify-content-end align-items-center p-3">
+          <a *ngIf="!isUser" routerLink="/login" class="navbar-log-in link mx-3">Log in</a>
+          <a *ngIf="!isUser" routerLink="/register" class="navbar-navlink6 rounded mx-2">
+              <div class="navbar-sign-up-btn rounded">
+                  <span class="navbar-sign-up p-2 text-white">Sign up</span>
+              </div>
+          </a>
+        </nav>
+      </nav>
+        <div class="home-content">
+          <h1 class="home-title">Threats Intelligence </h1>
+          <span class="home-caption">To Be Safe.</span>
+          <a routerLink="/learn-more" class="home-navlink">
+            <div class="home-sign-up-btn rounded">
+              <span class="home-sign-up p-2">Learn more</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

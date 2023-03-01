@@ -1,0 +1,174 @@
+
+:root {
+  --navbar-height: 59px;
+}
+
+
+.logo img {
+  width: 33%;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+.nav-list {
+  width: 70%;
+  display: flex; 
+}
+
+.nav-list li {
+
+  list-style: none;
+  padding: 2px 6px;
+}
+
+.nav-list li a {
+
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.rightNav {
+  width: 50;
+  text-align: right;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 9px;
+}
+
+.background {
+  background: grey;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.firstsection {
+  height: 100vh;
+}
+
+.lernmore-container {
+
+  background-size: cover;
+  height: 821px;
+  background-image: url(../../../assets/image/background.svg);
+}
+
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .our{
+
+    text-align:center;
+    margin-top:200px;
+    line-height: 3em; /* within paragraph */
+    font-family: Poppins;
+    color: aliceblue;
+    
+
+  }  
+  .card {
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    color: black;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .abstract{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5em; /* within paragraph */
+    margin-bottom: 30px; /* between paragraphs */
+    color: cornsilk;
+    font-size: 18px;
+  }
+  
+  .title {
+    margin-top:60px;
+    margin-bottom: 30px; /* between paragraphs */
+    font-family: Poppins;
+    color: aliceblue;
+    top: 100px;
+  }
+  
+  .major{
+    color: grey;
+    font-size: 14px;
+    
+  }
+  .email {
+    font-size: 12px;
+    color: #2b4884;
+
+  }
+  
+  .name {
+    font-size: 20px;
+    color: #2b4884;
+  }
+
+ 
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  

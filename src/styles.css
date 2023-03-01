@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eee;
+}
+
+.main-color {
+  color: #ff7800;
+}
+
+.custom-button {
+  border: 2px solid #000;
+  padding: 10px 15px;
+  transition: all .5s;
+}
+
+.custom-button:hover {
+  background-color: #ff7800;
+  color: #fff;
+}
+
+a,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.service {
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-succes {
+  padding: 8px 25px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: inline-block;
+  min-width: 133px;
+  text-align: center;
+  color: #fff;
+  background-color: #51C360;
+}
+
+.navbar-log-in {
+  color: #ffffff;
+}
+.navbar-navlink6 {
+  display: contents;
+}
+.navbar-sign-up-btn {
+  display: flex;
+  transition: 0.3s;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  text-decoration: none;
+  background-color: #2b4884;
+}
+
+.navbar-sign-up-btn:hover {
+  background-color: rgba(173, 226, 223, 0.5);
+}

@@ -1,0 +1,107 @@
+:host { 
+  display: contents; 
+}
+.dashboard-arab-container {
+  background-image: url(../../../assets/image/background.svg);
+  background-size: cover;
+  width: 100%;
+  height: 821px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame{
+  margin-top:45px;
+}
+.dashboard-arab-navlink {
+  display: contents;
+}
+.dashboard-arab-english-btn {
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  text-decoration: none;
+  background-color: #2b4884;
+}
+.dashboard-arab-english-btn:hover {
+  background-color: rgba(173, 226, 223, 0.5);
+}
+.dashboard-arab-english {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+}
+.dashboard-arab-subscription-btn {
+  display: flex;
+  transition: 0.3s;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-color: #2b4884;
+}
+.dashboard-arab-subscription-btn:hover {
+  background-color: rgba(173, 226, 223, 0.5);
+}
+.dashboard-arab-subscription {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+}
+.dashboard-arab-logout {
+  color: #ffffff;
+}
+@media(max-width: 1440px) {
+  .dashboard-arab-english-btn {
+    top: 15px;
+    left: 1068px;
+    width: 58px;
+    height: 51px;
+    position: absolute;
+    align-self: flex-end;
+    background-color: #ffffff;
+  }
+  .dashboard-arab-english {
+    color: rgb(43, 72, 132);
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+  }
+  .dashboard-arab-subscription-btn {
+    top: 15px;
+    right: 15px;
+    position: absolute;
+  }
+  .dashboard-arab-subscription {
+    color: rgb(255, 255, 255);
+  }
+  .dashboard-arab-logout {
+    top: 30px;
+    color: rgb(255, 255, 255);
+    right: 188px;
+    position: absolute;
+  }
+}
+@media(max-width: 991px) {
+  .dashboard-arab-english-btn {
+    display: none;
+  }
+  .dashboard-arab-subscription-btn {
+    display: none;
+  }
+  .dashboard-arab-logout {
+    display: none;
+  }
+}

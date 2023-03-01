@@ -1,0 +1,56 @@
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
+import { UsersService } from 'src/app/services/users.service';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent implements OnInit {
+
+
+  Subscribe: string = 'Subscribe';
+  isUser:boolean = false;
+
+  constructor(
+    private _AuthService: AuthService,
+    private _UsersService: UsersService
+  ) { }
+
+  ngOnInit(): void {
+
+    this._AuthService.user.subscribe(user => {
+      if (user) {
+        this._AuthService.userId = user.uid;
+        this.isUser = true;
+      } else {
+        this._AuthService.userId = ''
+        this.isUser = false;
+      }
+    })
+  }
+
+  logOut() {
+    this._AuthService.signOut()
+  }
+
+  subscribe(event:Event , service: string) {
+
+    let text = event.target as HTMLElement;
+
+    console.log(text.innerHTML);
+    
+
+    if (text.innerHTML == "Subscribe") {
+      // alert(`You Subscribe Succesfully in ${service} Service`);
+      this._UsersService.addToService({ "service": service }).then((res) => {
+        console.log("Done....2", res);
+      })
+      text.innerHTML = "Subscribed";
+      text.classList.add('bg-info', 'border-0')
+
+    }
+  }
+
+}

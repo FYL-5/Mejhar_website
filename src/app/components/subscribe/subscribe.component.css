@@ -1,0 +1,36 @@
+.btn-succes {
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: inline-block;
+    min-width: 133px;
+    text-align: center;
+    color: #2b4884;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-container{
+    background-image: url(../../../assets/image/background.svg);
+    background-size: cover;
+    height: 821px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top:60px;
+    margin-bottom: 30px; /* between paragraphs */
+    font-family: Poppins;
+    color: aliceblue;
+    top: 100px;
+  }
+
+  

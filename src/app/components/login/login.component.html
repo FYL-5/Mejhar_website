@@ -1,0 +1,46 @@
+<div class="login vh-100">
+  <nav class="d-flex align-items-center p-2">
+    <img src="../../../assets/image/mejharlogo.png" alt="error" class="logom" width="100px"/> 
+    <nav class="d-flex justify-content-end align-items-center p-3">
+      <a routerLink="/login" class="navbar-log-in link mx-3">Log in</a>
+      <a routerLink="/register" class="navbar-navlink6 rounded mx-2">
+        <div class="navbar-sign-up-btn rounded">
+          <span class="navbar-sign-up p-2 text-white">Sign up</span>
+            </div>
+        </a>    
+    </nav>
+  </nav>
+  <div class="overlay d-flex h-100">
+    <div class="login-container">
+      <form [formGroup]="loginForm" (ngSubmit)="login()" class="w-50 shadow-lg py-5 px-4">
+        <h1 class="mb-5">Welcome Back!</h1>
+        <p class="login-text1">If you have not an account ! <a class="main-color register" routerLink="/register">Sign  Up</a></p>
+        <h4 class="login-text2">
+          <span>Email</span>
+          <br />
+        </h4>
+        <input formControlName="email" class="form-control my-2" type="email" id="email">
+        <div *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched" class="alert-danger alert">
+          <p class="m-0" *ngIf="loginForm.get('email')?.errors?.['required']">* email is required</p>
+          <p class="m-0" *ngIf="loginForm.get('email')?.errors?.['email']">* email is Invalid </p>
+        </div>
+        <h4 class="login-text3">
+          <span>Password</span>
+          <br />
+        </h4>
+        <input formControlName="password" class="form-control my-2" type="password" id="password">
+        <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched" class="alert-danger alert">
+          <p class="m-0" *ngIf="loginForm.get('password')?.errors?.['required']">* password is required</p>
+        </div>
+        <a routerLink="/forgot-password">Forgot Password ?</a>
+        <button [disabled]="loginForm.invalid" type="submit" class="btn w-100 custom-button my-4">Sign In</button>
+        <div *ngIf="errorMsg" class="alert alert-danger">
+          {{errorMsg}}
+        </div>
+        <div class="d-flex justify-content-between">
+          <p>Keep me login <input type="checkbox"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
